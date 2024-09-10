@@ -1,1 +1,17 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+
+.navmenu {
+  position: relative;
+}
+
+@media only screen and (min-width: 600px) {
+  #navtoggler {
+    display: none;
+  }
+
+  .menu {
+    position: absolute;
+    top: -50px;
+    right: 4%;
+  }
+}
