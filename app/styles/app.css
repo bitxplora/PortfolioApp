@@ -4,7 +4,7 @@
   position: relative;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (width >= 600px) {
   #navtoggler {
     display: none;
   }
