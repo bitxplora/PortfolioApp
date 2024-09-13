@@ -1,7 +1,103 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
 
+:root {
+  --x-animation-timing: 300ms;
+  --x-animation-function: ease-out;
+}
+
 .navmenu {
+  height: 0;
+  transition: height var(--x-animation-timing) var(--x-animation-function);
+}
+
+.menu {
   position: relative;
+  display: grid;
+  list-style: none;
+  background-color: #62a0fe;
+  font-weight: 450;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  border: 0.1rem solid black;
+  cursor: pointer;
+  /* height: 0; */
+}
+
+.menu li a:hover {
+  background-color: black;
+}
+
+.menu a {
+  text-decoration: none;
+  display: flex;
+  justify-content: end;
+  color: white;
+  align-items: center;
+  padding: 5px 15px;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.navicon {
+  position: relative;
+  display: grid;
+  gap: 6px;
+  margin-right: 10px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.navicon::before,
+.navicon::after,
+.navicon input {
+  content: "";
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all var(--x-animation-timing) var(--x-animation-function);
+}
+
+.navicon input {
+  appearance: none;
+  pointer-events: none;
+}
+
+.navicon:has(input:checked) {
+  gap: 0;
+}
+
+.navicon:has(input:checked)::before {
+  rotate: 45deg;
+}
+
+.navicon:has(input:checked)::after {
+  position: absolute;
+  rotate: 135deg;
+}
+
+.navicon input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+.navicon:has(input:checked):hover {
+  rotate: -360deg;
+  transition: rotate var(--x-animation-timing) var(--x-animation-function);
+}
+
+/* .navicon:has(input:checked) .navmenu { */
+  /* height: 33px; */
+  /* border: 0.1rem solid black; */
+  /* display: block; */
+/* } */
+
+.navicon input:checked .navmenu {
+  height: 33px;
+  /* border: 0.1rem solid black; */
+  /* display: block; */
 }
 
 @media only screen and (width >= 600px) {
