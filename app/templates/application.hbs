@@ -1,29 +1,29 @@
 {{page-title "Dayo Olutayo | Frontend Developer"}}
 
 <div>
-  <div class="container-fluid navbar bg-primary">
-    <img src="images/brand-logo.png" class="navbar-brand ms-3" alt="Brand identity of Dayo Olutayo" width="25" height="50"/>
+  <header class="header bg-primary">
+    <img src="images/brand-logo.png" class="brand-logo" alt="Brand identity of Dayo Olutayo" width="25" height="50"/>
     <label for="navtoggler" class="navicon">
       <input type="checkbox" id="navtoggler">
     </label>
-  </div>
+    <nav class="navmenu">
+      <ul class="menu">
+        <li class="">
+          <a href="#" class="">Home</a>
+        </li>
+        <li class="">
+          <a href="#" class="">About</a>
+        </li>
+        <li class="">
+          <a href="#" class="">Projects</a>
+        </li>
+        <li class="">
+          <a href="#" class="">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  <nav class="navmenu">
-    <ul class="menu">
-      <li class="">
-        <a href="#" class="">Home</a>
-      </li>
-      <li class="">
-        <a href="#" class="">About</a>
-      </li>
-      <li class="">
-        <a href="#" class="">Projects</a>
-      </li>
-      <li class="">
-        <a href="#" class="">Contact</a>
-      </li>
-    </ul>
-  </nav>
 
   {{outlet}}
 </div>
