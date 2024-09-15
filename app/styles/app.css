@@ -51,15 +51,6 @@
   transition: all 2s var(--x-animation-function);
 }
 
-/* .menu li { */
-  /* border: 0.1rem solid black; */
-  /* outline: 0.1rem solid black; */
-  /* cursor: pointer; */
-  /* max-height: 0; */
-  /* cursor: none; */
-  /* appearance: none; */
-  /* opacity: 0; */
-/* } */
 
 .menu li a {
   text-decoration: none;
@@ -68,14 +59,7 @@
   color: white;
   align-items: center;
   padding: 5px 15px;
-  /* padding: 0; */
-  /* width: 100%; */
-  /* max-height: 30px; */
-  /* max-height: 0; */
   font-size: 0.9rem;
-  /* font-size: 0; */
-  /* appearance: none; */
-  /* opacity: 0; */
   border: 0.1rem solid black;
 }
 
@@ -87,7 +71,6 @@
   position: relative;
   display: grid;
   gap: 6px;
-  /* margin-right: 0; */
   z-index: 2;
   cursor: pointer;
 }
@@ -131,40 +114,14 @@
   width: 0;
 }
 
-/* .navicon input:checked { */
-/*   rotate: -360deg; */
-/*   transition: rotate var(--x-animation-timing) var(--x-animation-function); */
-/* } */
-
 .navicon:has(input:checked):hover {
   rotate: -360deg;
   transition: all var(--x-animation-timing) var(--x-animation-function);
 }
 
-/* .navicon:has(input:checked) .menu li { */
-/*   border: 0.1rem solid black; */
-/* } */
-
-/* #navtoggler:checked ~ .navmenu .menu li { */
-/*   border: 0.1rem solid black; */
-/* } */
-
-/* .navicon:has(input:checked) .menu a { */
-/*   padding: 5px 15px; */
-/*   max-height: 30px; */
-/*   font-size: 0.9rem; */
-/* } */
-
-/* input[type="checkbox"]:checked .menu li { */
-/*   border: 0.1rem solid black; */
-/* } */
 
 
-/* .navicon input:checked .navmenu { */
-  /* height: 33px; */
-  /* border: 0.1rem solid black; */
-  /* display: block; */
-/* } */
+
 
 /* @media only screen and (width >= 600px) { */
 /*   #navtoggler { */
