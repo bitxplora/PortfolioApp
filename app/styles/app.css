@@ -9,7 +9,7 @@
   min-width: 100%;
   max-height: 60px;
   display: grid;
-  padding: 5px;
+  padding: 1px;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
@@ -27,6 +27,11 @@
 .navicon {
   grid-area: hamburger;
   place-self: center;
+  position: relative;
+  display: grid;
+  gap: 6px;
+  z-index: 2;
+  cursor: pointer;
 }
 
 .navmenu {
@@ -67,13 +72,13 @@
   background-color: black;
 }
 
-.navicon {
-  position: relative;
-  display: grid;
-  gap: 6px;
-  z-index: 2;
-  cursor: pointer;
-}
+/* .navicon { */
+/*   position: relative; */
+/*   display: grid; */
+/*   gap: 6px; */
+/*   z-index: 2; */
+/*   cursor: pointer; */
+/* } */
 
 .navicon::before,
 .navicon::after,
@@ -121,13 +126,16 @@
 
 
 @media only screen and (width >= 600px) {
+  .header {
+    padding: 5px;
+
+  }
   .navicon {
     visibility: collapse;
   }
 
   .menu {
     top: 0;
-    position: relative;
     visibility: visible;
     opacity: 1;
     display: flex;
