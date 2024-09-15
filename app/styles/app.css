@@ -31,6 +31,8 @@
   gap: 6px;
   z-index: 2;
   cursor: pointer;
+  width: 100%;
+  transition: all 1s var(--x-animation-function);
 }
 
 .navmenu {
@@ -121,6 +123,8 @@
 
   .navicon {
     visibility: collapse;
+    opacity: 0;
+    width: 0;
   }
 
   .menu {
