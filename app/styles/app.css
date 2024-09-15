@@ -10,8 +10,7 @@
   max-height: 60px;
   display: grid;
   padding: 1px;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr 1fr;
+  grid-template: 1fr 1fr / repeat(6, 1fr);
   grid-template-areas:
     "logo . . . . hamburger"
     ". . . . . menus";
