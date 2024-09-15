@@ -14,7 +14,7 @@
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "logo . . . . hamburger"
-    "menus menus menus menus menus menus";
+    ". . . . . menus";
     align-content: center;
     align-items: center;
 }
@@ -31,26 +31,38 @@
 
 .navmenu {
   grid-area: menus;
+  justify-self: end;
+  position: absolute;
 }
 
 .menu {
-  position: absolute;
-  display: none;
+  position: relative;
+  top: 95px;
+  display: grid;
   list-style: none;
   background-color: #62a0fe;
   font-weight: 450;
   padding: 0;
   margin: 0;
-  max-height: 0;
+  /* z-index: 5; */
+  /* max-height: 0; */
+  /* appearance: none; */
+  opacity: 0;
+  visibility: collapse;
+  max-height: 0%;
+  /* max-height: 100%; */
+  transition: all 2s var(--x-animation-function);
 }
 
-.menu li {
+/* .menu li { */
   /* border: 0.1rem solid black; */
-  outline: 0.1rem solid black;
-  cursor: pointer;
+  /* outline: 0.1rem solid black; */
+  /* cursor: pointer; */
   /* max-height: 0; */
   /* cursor: none; */
-}
+  /* appearance: none; */
+  /* opacity: 0; */
+/* } */
 
 .menu li a {
   text-decoration: none;
@@ -60,11 +72,14 @@
   align-items: center;
   padding: 5px 15px;
   /* padding: 0; */
-  width: 100%;
+  /* width: 100%; */
   /* max-height: 30px; */
   /* max-height: 0; */
   font-size: 0.9rem;
   /* font-size: 0; */
+  /* appearance: none; */
+  /* opacity: 0; */
+  border: 0.1rem solid black;
 }
 
 .menu li a:hover {
@@ -75,7 +90,7 @@
   position: relative;
   display: grid;
   gap: 6px;
-  margin-right: 0;
+  /* margin-right: 0; */
   z-index: 2;
   cursor: pointer;
 }
@@ -108,23 +123,34 @@
   rotate: 135deg;
 }
 
+.navicon:has(input:checked) ~ .navmenu .menu {
+  opacity: 1;
+  visibility: visible;
+  max-height: 100%;
+}
+
 .navicon input:checked {
   opacity: 0;
   width: 0;
 }
 
+/* .navicon input:checked { */
+/*   rotate: -360deg; */
+/*   transition: rotate var(--x-animation-timing) var(--x-animation-function); */
+/* } */
+
 .navicon:has(input:checked):hover {
   rotate: -360deg;
-  transition: rotate var(--x-animation-timing) var(--x-animation-function);
+  transition: all var(--x-animation-timing) var(--x-animation-function);
 }
 
 /* .navicon:has(input:checked) .menu li { */
 /*   border: 0.1rem solid black; */
 /* } */
 
-#navtoggler:checked ~ .navmenu .menu li {
-  border: 0.1rem solid black;
-}
+/* #navtoggler:checked ~ .navmenu .menu li { */
+/*   border: 0.1rem solid black; */
+/* } */
 
 /* .navicon:has(input:checked) .menu a { */
 /*   padding: 5px 15px; */
@@ -143,14 +169,14 @@
   /* display: block; */
 /* } */
 
-@media only screen and (width >= 600px) {
-  #navtoggler {
-    display: none;
-  }
+/* @media only screen and (width >= 600px) { */
+/*   #navtoggler { */
+/*     display: none; */
+/*   } */
 
-  .menu {
-    position: absolute;
-    top: -50px;
-    right: 4%;
-  }
-}
+/*   .menu { */
+/*     position: absolute; */
+/*     top: -50px; */
+/*     right: 4%; */
+/*   } */
+/* } */
