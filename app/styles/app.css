@@ -14,8 +14,8 @@
   grid-template-areas:
     "logo . . . . hamburger"
     ". . . . . menus";
-    align-content: center;
-    align-items: center;
+  align-content: center;
+  align-items: center;
 }
 
 .brand-logo {
@@ -54,7 +54,6 @@
   max-height: 0%;
   transition: all 2s var(--x-animation-function);
 }
-
 
 .menu li a {
   text-decoration: none;
@@ -117,11 +116,11 @@
 
 
 @media only screen and (width >= 600px) {
-
   .header {
     padding: 5px;
 
   }
+
   .navicon {
     visibility: collapse;
   }
