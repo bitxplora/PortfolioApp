@@ -71,14 +71,6 @@
   background-color: black;
 }
 
-/* .navicon { */
-/*   position: relative; */
-/*   display: grid; */
-/*   gap: 6px; */
-/*   z-index: 2; */
-/*   cursor: pointer; */
-/* } */
-
 .navicon::before,
 .navicon::after,
 .navicon input {
@@ -125,6 +117,7 @@
 
 
 @media only screen and (width >= 600px) {
+
   .header {
     padding: 5px;
 
@@ -144,4 +137,5 @@
   .menu li a {
     border: none;
   }
+
 }
