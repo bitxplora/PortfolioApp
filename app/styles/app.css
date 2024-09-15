@@ -1,7 +1,7 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
 
 :root {
-  --x-animation-timing: 300ms;
+  --x-animation-timing: 500ms;
   --x-animation-function: ease-out;
 }
 
@@ -9,7 +9,7 @@
   min-width: 100%;
   max-height: 60px;
   display: grid;
-  padding: 1px;
+  padding: 2px;
   grid-template: 1fr 1fr / repeat(6, 1fr);
   grid-template-areas:
     "logo . . . . hamburger"
@@ -111,10 +111,10 @@
   width: 0;
 }
 
-.navicon:has(input:checked):hover {
-  rotate: -360deg;
-  transition: all var(--x-animation-timing) var(--x-animation-function);
-}
+/* .navicon:has(input:checked):hover { */
+/*   rotate: -360deg; */
+/*   transition: all var(--x-animation-timing) var(--x-animation-function); */
+/* } */
 
 @media only screen and (width >= 600px) {
   .header {
