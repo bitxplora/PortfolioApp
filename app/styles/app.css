@@ -111,11 +111,6 @@
   width: 0;
 }
 
-/* .navicon:has(input:checked):hover { */
-/*   rotate: -360deg; */
-/*   transition: all var(--x-animation-timing) var(--x-animation-function); */
-/* } */
-
 @media only screen and (width >= 600px) {
   .header {
     padding: 5px;
