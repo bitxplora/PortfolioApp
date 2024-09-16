@@ -113,8 +113,7 @@
 
 .welcome {
   display: grid;
-  justify-content: center;
-  align-content: center;
+  place-content: center;
   max-width: 90%;
 }
 
