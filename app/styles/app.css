@@ -5,6 +5,17 @@
   --x-animation-function: ease-out;
 }
 
+body {
+  min-height: 100%;
+}
+
+.container-page {
+  position: relative;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
 .header {
   min-width: 100%;
   max-height: 60px;
@@ -113,12 +124,24 @@
 
 .welcome {
   display: grid;
-  place-content: center;
+  grid-template-rows: repeat(3, max-content);
   max-width: 90%;
+  place-self: center;
+  justify-items: center;
+  row-gap: 30px;
 }
 
+/* .welcome .greetings { */
+  /* align-self: end; */
+/* } */
+
+/* .welcome .brand-message { */
+  /* align-self: center; */
+  /* max-height: fit-content; */
+  /* justify-items: center; */
+/* } */
+
 .button-project {
-  justify-self: center;
   height: 45px;
   width: 150px;
   border-radius: 5px;
@@ -126,6 +149,32 @@
   font-size: 1rem;
   letter-spacing: 0.2rem;
   color: #fff;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 10px;
+  align-content: center;
+  align-items: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer ul {
+  margin: 0;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 10px;
+  list-style: none;
+  align-self: center;
+  align-items: center;
 }
 
 @media only screen and (width >= 600px) {
