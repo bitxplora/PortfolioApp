@@ -24,3 +24,4 @@
 # broccoli-debug
 /DEBUG/
 ../app/templates/application-original.hbs
+package-lock.json
