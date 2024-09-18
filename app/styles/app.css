@@ -141,16 +141,12 @@ h1.greetings::before,
 h1.greetings::after {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;
 }
 
 h1.greetings::before {
   background-color: #e5e9ff;
-  animation:
-    typewriter var(--typewriter-speed) steps(20) 1s forwards;
+  animation: typewriter var(--typewriter-speed) steps(20) 1s forwards;
 }
 
 h1.greetings::after {
@@ -182,15 +178,6 @@ h1.greetings::after {
   letter-spacing: 0.2rem;
   color: #fff;
 }
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  color: #fff;
-  padding: 10px;
-  place-content: center;
-}
-
 .social {
   background-color: #064db7;
   color: #fff;
