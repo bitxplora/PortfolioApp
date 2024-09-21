@@ -86,7 +86,7 @@ body {
   color: white;
   align-items: center;
   padding: 5px 15px;
-  font-family: "Inria Sans";
+  font-family: "Inria Sans" serif;
   font-size: 0.9rem;
   font-weight: 600;
   border: 0.1rem solid black;
@@ -146,10 +146,9 @@ body {
   row-gap: 30px;
 }
 
-
 h1.greetings {
   position: relative;
-  background-color: color-mix(in xyz-d65, white 68%, currentColor);
+  background-color: color-mix(in xyz-d65, white 68%, currentcolor);
   box-shadow: 2px 2px 5px 2px #d4d4d4;
   border-radius: 8px;
   padding: 0.1rem;
@@ -163,7 +162,7 @@ h1.greetings::after {
 }
 
 h1.greetings::before {
-  background-color: color-mix(in xyz-d65, white 68%, currentColor);
+  background-color: color-mix(in xyz-d65, white 68%, currentcolor);
   box-shadow: 2px 2px 5px 2px #d4d4d4;
   border-radius: 8px;
   animation: typewriter var(--typewriter-speed) steps(20) 1s forwards;
@@ -194,8 +193,7 @@ h1.greetings::after {
   width: 150px;
   border-radius: 5px;
   cursor: pointer;
-  font-family: "Inria Sans";
-  font-weight: 410;
+  font-family: "Inria Sans" sans-serif;
   font-size: 1.1rem;
   font-weight: 550;
   letter-spacing: 0.2rem;
@@ -233,18 +231,18 @@ h1.greetings::after {
 }
 
 .greetings {
-  font-family: "Liber Franklin";
+  font-family: "Liber Franklin" serif;
   font-weight: 350;
 }
 
 .greetings .name {
-  font-family: Poppins;
+  font-family: Poppins serif;
   font-weight: 550;
 }
 
 .brand-message {
-  font-family: SUSE;
-  font-size: 1.0rem;
+  font-family: SUSE serif;
+  font-size: 1rem;
   font-weight: 390;
   text-align: center;
   width: 50%;
