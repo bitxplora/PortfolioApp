@@ -10,24 +10,34 @@ body {
   min-height: 100%;
 }
 
-.container-page {
+.app-container {
+  display: grid;
+  min-height: 100%;
+  min-width: 100%;
   background-color: #e5e9ff;
+}
+
+.container-page {
+  width: 100vw;
+  background-image: url("/images/bg-image-1.webp");
+  background-size: cover;
+  background-color: #fbfcff;
+  background-blend-mode: multiply;
   position: relative;
   display: grid;
-  min-height: 100vh;
-  grid-template-rows: auto 1fr auto;
+  min-height: calc(100vh - 60px);
 }
 
 .header {
   min-width: 100%;
   max-height: 60px;
   display: grid;
-  padding: 1px;
   grid-template: 1fr 1fr / repeat(6, 1fr);
   grid-template-areas:
     "logo . . . . hamburger"
     ". . . . . menus";
   align-items: center;
+  background-color: #064db7;
 }
 
 .brand-logo {
@@ -58,13 +68,14 @@ body {
   overflow: hidden;
   display: grid;
   list-style: none;
-  background-color: #62a0fe;
+  background-color: #326fca;
   font-weight: 450;
   padding: 0;
   margin: 0;
   opacity: 0;
   visibility: collapse;
   max-height: 0%;
+  z-index: 1;
   transition: all 2s var(--x-animation-function);
 }
 
@@ -75,7 +86,9 @@ body {
   color: white;
   align-items: center;
   padding: 5px 15px;
+  font-family: "Inria Sans";
   font-size: 0.9rem;
+  font-weight: 600;
   border: 0.1rem solid black;
 }
 
@@ -133,8 +146,15 @@ body {
   row-gap: 30px;
 }
 
+
 h1.greetings {
   position: relative;
+  /* background-color: color-mix(in xyz-d65, #d4d4d4 60%, white); */
+  /* background-color: color-mix(in rec2020, #d4d4d4 60%, white); */
+  background-color: color-mix(in xyz-d65, white 68%, currentColor);
+  box-shadow: 2px 2px currentColor;
+  border-radius: 8px;
+  padding: 0.1rem;
 }
 
 h1.greetings::before,
@@ -145,13 +165,18 @@ h1.greetings::after {
 }
 
 h1.greetings::before {
-  background-color: #e5e9ff;
+  /* background-color: color-mix(in xyz-d65, #d4d4d4 48%, white); */
+  /* background-color: color-mix(in xyz-d65, #d4d4d4 48%, currentColor); */
+  background-color: color-mix(in xyz-d65, white 68%, currentColor);
+  box-shadow: 2px 2px currentColor;
+  border-radius: 8px;
   animation: typewriter var(--typewriter-speed) steps(20) 1s forwards;
 }
 
 h1.greetings::after {
   width: 0.125em;
   background: black;
+  /* background-color: #064db7; */
   animation:
     typewriter var(--typewriter-speed) steps(20) 1s forwards,
     blink 750ms steps(20) infinite;
@@ -174,9 +199,14 @@ h1.greetings::after {
   width: 150px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1rem;
+  font-family: "Inria Sans";
+  font-weight: 410;
+  font-size: 1.1rem;
+  font-weight: 550;
   letter-spacing: 0.2rem;
   color: #fff;
+  background-color: #326fca;
+  border: none;
 }
 
 .social {
@@ -205,6 +235,24 @@ h1.greetings::after {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.greetings {
+  font-family: "Liber Franklin";
+  font-weight: 350;
+}
+
+.greetings .name {
+  font-family: Poppins;
+  font-weight: 550;
+}
+
+.brand-message {
+  font-family: SUSE;
+  font-size: 1.0rem;
+  font-weight: 390;
+  text-align: center;
+  width: 50%;
 }
 
 @media only screen and (width >= 600px) {
