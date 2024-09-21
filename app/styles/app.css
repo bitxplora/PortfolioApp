@@ -149,8 +149,6 @@ body {
 
 h1.greetings {
   position: relative;
-  /* background-color: color-mix(in xyz-d65, #d4d4d4 60%, white); */
-  /* background-color: color-mix(in rec2020, #d4d4d4 60%, white); */
   background-color: color-mix(in xyz-d65, white 68%, currentColor);
   box-shadow: 2px 2px currentColor;
   border-radius: 8px;
@@ -165,8 +163,6 @@ h1.greetings::after {
 }
 
 h1.greetings::before {
-  /* background-color: color-mix(in xyz-d65, #d4d4d4 48%, white); */
-  /* background-color: color-mix(in xyz-d65, #d4d4d4 48%, currentColor); */
   background-color: color-mix(in xyz-d65, white 68%, currentColor);
   box-shadow: 2px 2px currentColor;
   border-radius: 8px;
@@ -176,7 +172,6 @@ h1.greetings::before {
 h1.greetings::after {
   width: 0.125em;
   background: black;
-  /* background-color: #064db7; */
   animation:
     typewriter var(--typewriter-speed) steps(20) 1s forwards,
     blink 750ms steps(20) infinite;
