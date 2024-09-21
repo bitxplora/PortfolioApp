@@ -144,12 +144,13 @@ body {
   place-self: center;
   justify-items: center;
   row-gap: 30px;
+  padding: 20px 0;
 }
 
 h1.greetings {
   position: relative;
   background-color: color-mix(in xyz-d65, white 68%, currentcolor);
-  box-shadow: 2px 2px 5px 2px #d4d4d4;
+  box-shadow: 2px 2px 29px 5px #d4d4d4;
   border-radius: 8px;
   padding: 0.1rem;
 }
@@ -163,7 +164,7 @@ h1.greetings::after {
 
 h1.greetings::before {
   background-color: color-mix(in xyz-d65, white 68%, currentcolor);
-  box-shadow: 2px 2px 5px 2px #d4d4d4;
+  box-shadow: 2px 2px 29px 5px #d4d4d4;
   border-radius: 8px;
   animation: typewriter var(--typewriter-speed) steps(20) 1s forwards;
 }
