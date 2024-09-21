@@ -150,7 +150,7 @@ body {
 h1.greetings {
   position: relative;
   background-color: color-mix(in xyz-d65, white 68%, currentColor);
-  box-shadow: 2px 2px currentColor;
+  box-shadow: 2px 2px 5px 2px #d4d4d4;
   border-radius: 8px;
   padding: 0.1rem;
 }
@@ -164,7 +164,7 @@ h1.greetings::after {
 
 h1.greetings::before {
   background-color: color-mix(in xyz-d65, white 68%, currentColor);
-  box-shadow: 2px 2px currentColor;
+  box-shadow: 2px 2px 5px 2px #d4d4d4;
   border-radius: 8px;
   animation: typewriter var(--typewriter-speed) steps(20) 1s forwards;
 }
