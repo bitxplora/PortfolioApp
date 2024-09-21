@@ -86,7 +86,7 @@ body {
   color: white;
   align-items: center;
   padding: 5px 15px;
-  font-family: "Inria Sans" serif;
+  font-family: "Inria Sans", serif;
   font-size: 0.9rem;
   font-weight: 600;
   border: 0.1rem solid black;
@@ -193,7 +193,7 @@ h1.greetings::after {
   width: 150px;
   border-radius: 5px;
   cursor: pointer;
-  font-family: "Inria Sans" sans-serif;
+  font-family: "Inria Sans", sans-serif;
   font-size: 1.1rem;
   font-weight: 550;
   letter-spacing: 0.2rem;
@@ -231,17 +231,17 @@ h1.greetings::after {
 }
 
 .greetings {
-  font-family: "Liber Franklin" serif;
+  font-family: "Liber Franklin", serif;
   font-weight: 350;
 }
 
 .greetings .name {
-  font-family: Poppins serif;
+  font-family: Poppins, serif;
   font-weight: 550;
 }
 
 .brand-message {
-  font-family: SUSE serif;
+  font-family: SUSE, serif;
   font-size: 1rem;
   font-weight: 390;
   text-align: center;
