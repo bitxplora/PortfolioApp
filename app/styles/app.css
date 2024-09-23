@@ -251,6 +251,7 @@ h1.greetings::after {
 
 .about-page {
   position: relative;
+  padding: 10% 0;
   display: grid;
   margin: auto;
   width: 80%;
@@ -265,14 +266,20 @@ h1.greetings::after {
 
 .me-heading {
   display: flex;
-  padding: 8% 1%;
+  padding: 2% 1%;
   color: #064db7;
   font-family: Poppins, serif;
   font-size: 2rem;
 }
 
+h1.me-heading {
+  display: flex;
+  justify-content: center;
+}
+
 h2.me-heading {
   font-size: 1.2rem;
+  margin-top: 20%;
 }
 
 .tools {
