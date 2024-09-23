@@ -14,7 +14,7 @@ body {
   display: grid;
   min-height: 100%;
   min-width: 100%;
-  background-color: #e5e9ff;
+  background-color: #fbfcff;
 }
 
 .container-page {
@@ -249,6 +249,53 @@ h1.greetings::after {
   width: 50%;
 }
 
+.about-page {
+  position: relative;
+  display: grid;
+  margin: auto;
+  width: 90%;
+  gap: 50px;
+}
+
+.about {
+  /* margin: auto; */
+  display: grid;
+  /* width: 90%; */
+  font-family: Roboto, serif;
+}
+
+.me-heading {
+  display: flex;
+  padding: 8% 0 1% 0;
+  color: #064db7;
+  font-family: Poppins, Roboto;
+  font-size: 2rem;
+}
+
+h2.me-heading {
+  font-size: 1.2rem;
+}
+
+.tools {
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  place-content: center space-between;
+  transform: translateY(5rem);
+  animation: social-in-up 2s ease 2s forwards;
+}
+
+.tool {
+  position: relatative;
+  width: 100px;
+  padding: 5px;
+  background-color: snow;
+  text-align: center;
+}
+
 @media only screen and (width >= 600px) {
   .header {
     padding: 5px;
@@ -270,5 +317,14 @@ h1.greetings::after {
 
   .menu li a {
     border: none;
+  }
+}
+
+@media only screen and (width > 800px) {
+  .about-page {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    width: 70%;
+    margin: auto;
   }
 }
