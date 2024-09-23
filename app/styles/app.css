@@ -253,15 +253,14 @@ h1.greetings::after {
   position: relative;
   display: grid;
   margin: auto;
-  width: 90%;
+  width: 80%;
   gap: 50px;
 }
 
 .about {
-  /* margin: auto; */
   display: grid;
-  /* width: 90%; */
   font-family: Roboto, serif;
+  line-height: 1.8rem;
 }
 
 .me-heading {
@@ -283,6 +282,7 @@ h2.me-heading {
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
+  font-family: Poppins, serif;
   place-content: center space-between;
   transform: translateY(5rem);
   animation: social-in-up 2s ease 2s forwards;
