@@ -288,7 +288,7 @@ h2.me-heading {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px;
+  padding: 10px;
   font-family: Poppins, serif;
   place-content: center space-between;
   transform: translateY(5rem);
@@ -330,8 +330,13 @@ h2.me-heading {
 @media only screen and (width > 800px) {
   .about-page {
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    column-gap: 10%;
     width: 70%;
     margin: auto;
   }
+
+  h2.me-heading {
+    margin-top: 6%;
+  }
+
 }
