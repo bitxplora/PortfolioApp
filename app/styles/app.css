@@ -336,6 +336,7 @@ h2.me-heading {
 .container-button {
   display: flex;
   justify-content: end;
+  margin-bottom: 2rem;
 }
 
 .button-submit {
