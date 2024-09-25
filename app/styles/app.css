@@ -108,6 +108,11 @@ body {
   transition: all var(--x-animation-timing) var(--x-animation-function);
 }
 
+.form-contact input {
+  margin-bottom: 1.6rem;
+  font-size: 0.7rem;
+}
+
 .navicon input {
   appearance: none;
   pointer-events: none;
@@ -297,7 +302,6 @@ h2.me-heading {
 }
 
 .tool {
-  position: relatative;
   width: 100px;
   padding: 5px;
   background-color: snow;
@@ -327,11 +331,6 @@ h2.me-heading {
 .form-contact {
   font-family: Poppins, serif;
   font-size: 1rem;
-}
-
-.form-contact input {
-  margin-bottom: 1.6rem;
-  font-size: 0.7rem;
 }
 
 .container-button {
