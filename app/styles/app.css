@@ -304,6 +304,25 @@ h2.me-heading {
   text-align: center;
 }
 
+.contact-page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    head
+    contact
+    bottom;
+  place-content: center;
+  /* row-gap: 80px; */
+}
+
+.contact {
+  width: 90%;
+  margin: auto;
+  margin-top: 25%;
+  grid-area: contact;
+  display: grid;
+}
+
 @media only screen and (width >= 600px) {
   .header {
     padding: 5px;
