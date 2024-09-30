@@ -27,7 +27,6 @@
       padding: 10px 0;
       margin: 30px 0;
       display: grid;
-      grid-template-rows: repeat(4, minmax(fit-content, 1fr));
       grid-template-areas:
         "header"
         "image"
