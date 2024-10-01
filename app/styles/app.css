@@ -357,6 +357,12 @@ textarea[placeholder] {
   font-size: 0.7rem;
 }
 
+.projects {
+  display: grid;
+  row-gap: 50px;
+  margin: 50px 0;
+}
+
 .container-projects {
   display: grid;
   place-content: center;
@@ -418,6 +424,14 @@ textarea[placeholder] {
 
   .menu li a {
     border: none;
+  }
+
+  .container-projects {
+    width: 60%;
+  }
+
+  .projects-heading {
+    margin-top: 10%;
   }
 }
 
