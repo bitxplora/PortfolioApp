@@ -4,9 +4,9 @@
 <svg
    version="1.1"
    id="svg1"
-   width="489"
-   height="985"
-   viewBox="0 0 489 985"
+   width="150"
+   height="300"
+   viewBox="0 0 150 300"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
@@ -30,7 +30,8 @@
     </clipPath>
   </defs>
   <g
-     id="g1">
+     id="g1"
+     transform="matrix(0.31603308,0,0,0.30880235,-1.0053125,-0.94567598)">
     <image
        width="489"
        height="985"
