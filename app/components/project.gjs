@@ -6,7 +6,7 @@
       </h2>
     </div>
     <div class="block-image">
-      <img src="/images/{{@image}}" alt={{@imageAlt}} width="200" height="300" ...attributes>
+      <img src="/images/{{@image}}" alt={{@imageAlt}} width="150" height="300" ...attributes>
     </div>
     <div class="block-description">
       <p>
