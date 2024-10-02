@@ -66,10 +66,11 @@
       padding: 30px 0;
     }
 
-    @media only screen and (width >= 600px) {
+    @media only screen and (width >= 900px) {
       .block-layout {
+        width: 80%;
         padding: 10px 0;
-        margin: 15px 0;
+        margin: 65px 0;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
