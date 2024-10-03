@@ -40,6 +40,11 @@ body {
   background-color: #064db7;
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
 .brand-logo {
   grid-area: logo;
   place-self: center;

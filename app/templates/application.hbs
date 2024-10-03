@@ -2,23 +2,33 @@
 
 <div class="app-container">
   <header class="header">
-    <img src="images/brand-logo.png" class="brand-logo" alt="Brand identity of Dayo Olutayo" width="25" height="50"/>
+    <LinkTo @route="index" class="logo">
+      <img src="images/brand-logo.png" class="brand-logo" alt="Brand identity of Dayo Olutayo" width="25" height="50"/>
+    </LinkTo>
     <label for="navtoggler" class="navicon">
       <input type="checkbox" id="navtoggler" aria-label="Toggle navigation">
     </label>
     <nav class="navmenu">
       <ul class="menu">
-        <li class="">
-          <a href="#" class="">Home</a>
+        <li>
+          <LinkTo @route="index">
+            Home
+          </LinkTo>
         </li>
-        <li class="">
-          <a href="#" class="">About</a>
+        <li>
+          <LinkTo @route="about">
+            About
+          </LinkTo>
         </li>
-        <li class="">
-          <a href="#" class="">Projects</a>
+        <li>
+          <LinkTo @route="projects">
+            Projects
+          </LinkTo>
         </li>
-        <li class="">
-          <a href="#" class="">Contact</a>
+        <li>
+          <LinkTo @route="contact">
+            Contact
+          </LinkTo>
         </li>
       </ul>
     </nav>
