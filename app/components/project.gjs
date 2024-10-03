@@ -36,36 +36,29 @@
       font-family: Roboto, sans-serif;
       font-size: 0.9rem;
     }
-
     .block-header {
       grid-area: header;
     }
-
     .block-image {
       grid-area: image;
       height: 100%;
     }
-
     .block-description {
       grid-area: description;
     }
-
     .block-description span {
       font-size: 0.9rem;
       font-style: oblique;
     }
-
     .block-projectLink {
       grid-area: projectLink;
     }
-
     h2 {
       font-family: Poppins, serif;
       font-size: 1.5rem;
       font-weight: 550;
       padding: 30px 0;
     }
-
     @media only screen and (width >= 900px) {
       .block-layout {
         width: 80%;
