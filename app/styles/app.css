@@ -12,9 +12,9 @@ body {
 
 .app-container {
   display: grid;
-  min-height: 100%;
+  min-height: 100vh;
   min-width: 100%;
-  background-color: #fbfcff;
+  background-color: #e6edf8;
 }
 
 .container-page {
