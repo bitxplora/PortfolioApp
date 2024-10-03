@@ -20,4 +20,9 @@ import { LinkTo } from "@ember/routing";
       <li><i class="bi bi-linkedin"></i></li>
     </ul>
   </nav>
+  <style>
+    .social li a {
+      color: #fff;
+    }
+  </style>
 </template>

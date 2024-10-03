@@ -228,10 +228,6 @@ h1.greetings::after {
   cursor: pointer;
 }
 
-.social li a {
-  color: #fff;
-}
-
 @keyframes social-in-up {
   to {
     opacity: 1;
