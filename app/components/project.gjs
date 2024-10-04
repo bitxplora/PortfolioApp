@@ -21,7 +21,7 @@
             </a>
           </li>
           <li>
-            <a href="{{@globe}}">
+            <a href="https://{{@globe}}">
               <i class="bi {{if @globe "bi-globe"}}"></i>
             </a>
           </li>
