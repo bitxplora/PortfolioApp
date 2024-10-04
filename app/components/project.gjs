@@ -15,8 +15,16 @@
     </div>
       <nav class="projectLink">
         <ul class="social-project">
-          <li><i class="bi bi-github"></i></li>
-          <li><i class="bi bi-globe"></i></li>
+          <li>
+            <a href="https://github.com/bitxplora/{{@github}}">
+              <i class="bi bi-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="{{@globe}}">
+              <i class="bi {{if @globe "bi-globe"}}"></i>
+            </a>
+          </li>
         </ul>
       </nav>
   </section>
@@ -58,6 +66,9 @@
       font-size: 1.5rem;
       font-weight: 550;
       padding: 30px 0;
+    }
+    nav.projectLink .social-project li a {
+      color: #fff;
     }
     @media only screen and (width >= 900px) {
       .block-layout {
