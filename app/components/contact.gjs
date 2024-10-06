@@ -11,11 +11,11 @@ export default class Contact extends Component {
 
   <template>
     <div>
-      <form class="form-contact" id="form-contact" name="form-contact" action="mailto:info@olutayo.dev">
+      <form class="form-contact" id="form-contact" name="form-contact" action="mailto:info@olutayo.dev" autocomplete="false">
         <label for="nameInput" class="form-label">Name</label>
         <input type="text" class="form-control" id="nameInput" name="nameInput" aria-describedby="name" placeholder=" Enter your name" aria-required="true" required>
         <label for="emailInput" class="form-label">Email</label>
-        <input type="email" class="form-control" id="emailInput" name="emailInput" aria-describedby="email" placeholder=" Enter your name" aria-required="true" required >
+        <input type="email" class="form-control" id="emailInput" name="emailInput" aria-describedby="email" placeholder=" Enter your email address" aria-required="true" required >
         <label for="messageInput" class="form-label">Message</label>
         <textarea class="form-control" id="messageInput" name="messageInput" aria-describedby="message" placeholder=" Enter your message" aria-required="true" required rows="10" ></textarea>
         <div class="container-button">
