@@ -52,5 +52,9 @@ module.exports = {
       files: ['tests/**/*-test.{js,ts}'],
       extends: ['plugin:qunit/recommended'],
     },
+    {
+      files: ['**/content-security-policy.js'],
+      rules: { 'no-unused-vars': 0 },
+    },
   ],
 };
