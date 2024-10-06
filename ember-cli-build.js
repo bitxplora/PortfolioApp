@@ -9,6 +9,11 @@ module.exports = function (defaults) {
       importBootstrapCSS: false,
       insertEmberWormholeElementToDom: false,
     },
+    packagerOptions: {
+      webpackConfig: {
+        devtool: false,
+      },
+    },
   });
 
   const { Webpack } = require('@embroider/webpack');
