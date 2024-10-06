@@ -7,11 +7,7 @@ module.exports = function (environment) {
       // Deny everything by default
       'connect-src': ["'self'"],
       // Allow scripts, images and media from the same host as the index.html is served ('self')
-      'script-src': [
-        "'self'",
-        'localhost:*',
-        environment === 'test' ? "'unsafe-eval'" : '',
-      ],
+      'script-src': ["'self'", 'localhost:*', "'unsafe-eval'"],
       'img-src': ["'self'"],
       'media-src': ["'self'"],
       // Style sheet should be loaded from same host and from https://fonts.googleapis.com for Google fonts
@@ -41,6 +37,7 @@ module.exports = function (environment) {
         "'unsafe-inline'",
         'https://fonts.googleapis.com',
         'https://fonts.gstatic.com',
+        'https://cdn.jsdelivr.net',
       ],
     },
     reportOnly: false,
