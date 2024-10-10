@@ -1,6 +1,6 @@
 import { LinkTo } from "@ember/routing";
 <template>
-  <nav socialnav>
+  <nav>
     <ul class="social">
       <li>
         <a href="https://github.com/bitxplora">
