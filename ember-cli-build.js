@@ -9,7 +9,7 @@ module.exports = function (defaults) {
       importBootstrapCSS: false,
       insertEmberWormholeElementToDom: false,
     },
-    packagerOptions: {
+     packagerOptions: {
       webpackConfig: {
         devtool: false,
       },
