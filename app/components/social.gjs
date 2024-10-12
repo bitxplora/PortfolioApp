@@ -1,7 +1,7 @@
 import { LinkTo } from "@ember/routing";
 <template>
   <nav>
-    <ul class="social">
+    <ul data-test-social class="social">
       <li>
         <a href="https://github.com/bitxplora">
           <i class="bi bi-github"></i>
