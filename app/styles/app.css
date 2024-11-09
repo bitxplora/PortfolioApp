@@ -302,8 +302,8 @@ h2.me-heading {
   padding: 10px;
   font-family: Poppins, serif;
   place-content: center space-between;
-  transform: translateY(5rem);
-  animation: social-in-up 2s ease 2s forwards;
+  transform: translateY(4rem);
+  animation: social-in-up 2s ease 0.5s forwards;
 }
 
 .tool {
