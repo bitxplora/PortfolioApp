@@ -25,3 +25,4 @@
 /DEBUG/
 ../app/templates/application-original.hbs
 tmp
+.glintrc.yml
