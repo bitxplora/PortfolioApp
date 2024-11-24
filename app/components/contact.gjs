@@ -5,8 +5,6 @@ export default class Contact extends Component {
     event.preventDefault();
     let form = document.getElementById("form-contact");
     let messageData = new FormData(form);
-    let message = Object.fromEntries(messageData.entries());
-    return message;
   };
 
   <template>
